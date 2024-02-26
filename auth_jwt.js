@@ -1,4 +1,5 @@
 var passport = require('passport');
+require('dotenv').config();     //requires dotenv so that SECRET_KEY can be read from .env
 var JwtStrategy = require('passport-jwt').Strategy;
 var ExtractJwt = require('passport-jwt').ExtractJwt;
 
